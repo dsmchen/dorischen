@@ -96,8 +96,10 @@ h6 {
 */
 
 :root {
+  --color-white: #fff;
   --color-neutral-050: #fefefb;
   --color-brand-dark: #213130;
+  --color-brand-primary: #b0ec9c;
 
   --text: var(--color-brand-dark);
   --bg: var(--color-neutral-050);
@@ -124,6 +126,24 @@ h1 {
   font-size: 8rem;
   line-height: 0.8;
   text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1:hover {
+  animation: color 2s infinite linear;
+}
+
+@keyframes color {
+  0% {
+    background: var(--color-white);
+  }
+  50% {
+    background: var(--color-brand-primary);
+  }
+  100% {
+    background: var(--color-white);
+  }
 }
 
 h2 {
@@ -136,4 +156,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1:hover {
+    animation: none;
+  }
 }
