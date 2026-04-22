@@ -2,6 +2,10 @@
 
 Personal website using React and vanilla CSS.
 
+## Demo
+
+- [dorischen.vercel.app](https://dorischen.vercel.app/)
+
 ## Resources
 
 - [Favicon.io](https://favicon.io/)
