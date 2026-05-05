@@ -102,7 +102,9 @@ h6 {
   --color-brand-primary: #b0ec9c;
 
   --text: var(--color-brand-dark);
+  --text-h: var(--color-neutral-050);
   --bg: var(--color-neutral-050);
+  --bg-h: var(--color-brand-dark);
 
   --sans: 'Inclusive Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
 
@@ -114,7 +116,9 @@ h6 {
 @media (prefers-color-scheme: dark) {
   :root {
     --text: var(--color-neutral-050);
+    --text-h: var(--color-brand-dark);
     --bg: var(--color-brand-dark);
+    --bg-h: var(--color-neutral-050);
   }
 }
 
@@ -131,18 +135,21 @@ h1 {
 }
 
 h1:hover {
-  animation: color 2s infinite linear;
+  animation: color 5s infinite linear;
 }
 
 @keyframes color {
   0% {
-    background: var(--color-white);
+    background: var(--bg);
+    color: var(--text);
   }
   50% {
-    background: var(--color-brand-primary);
+    background: var(--bg-h);
+    color: var(--text-h);
   }
   100% {
-    background: var(--color-white);
+    background: var(--bg);
+    color: var(--text);
   }
 }
 
